@@ -1,10 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'antd/dist/antd.css';
 import "../public/css/styles.css"
-// import '@mui/icons-material'
-// import '@mui/material'
-// import 'emotion/react'
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
+
+const theme = createTheme({
+    palette : {
+        primary :{
+            main : '#282a36',
+            contrastText : '#8be9fd'
+        }
+    }
+})
 import Header from "../components/Header"
 
 
@@ -12,8 +19,10 @@ function myApp ({Component, pageProps}) {
 
     return (
     <>
-        <Header />
-        <Component {...pageProps} />
+        <ThemeProvider theme={theme}>
+            <Header />
+            <Component {...pageProps} />
+        </ThemeProvider>
     </>
     
     )

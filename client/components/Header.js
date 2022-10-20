@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import {AppBar,Box,Toolbar,Typography,Button, Avatar} from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
 
 
 const Header = () => {
@@ -9,15 +8,35 @@ const Header = () => {
             <Box sx={{ flexGrow: 1 }}>
                 <AppBar position="static">
                     <Toolbar>
-                        <Avatar sx = {{marginRight:3}} alt = "Hossein Simchi" src="" />
+                        <Avatar sx = {{width: 45, height: 45, marginRight:3}} alt = "Hossein Simchi" src="/img/LogoImage.jpg" />
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                             Hossein Simchi
                         </Typography>
-                        <Button sx = {{marginRight:6}} color="inherit">Home</Button>
-                        <Button sx = {{marginRight:6}} color="inherit">Skills</Button>
-                        <Button sx = {{marginRight:6}} color="inherit">Education</Button>
-                        <Button sx = {{marginRight:6}} color="inherit">Articles</Button>
-                        <Button color="inherit">Login/Signup</Button>
+                        <Button sx = {{marginRight:6}} color="inherit">
+                            <Link href="/">
+                                Home
+                            </Link>
+                        </Button>
+                        <Button sx = {{marginRight:6}} color="inherit">
+                            <Link href="/skills">
+                                Skills
+                            </Link>
+                        </Button>
+                        <Button sx = {{marginRight:6}} color="inherit">
+                            <Link href="/articles">
+                                Articles
+                            </Link>
+                        </Button>
+                        <Button sx = {{marginRight:6}} color="inherit">
+                            <Link href="/education">
+                                Education
+                            </Link>
+                        </Button>
+                        <Button sx = {{marginRight:6}} color="inherit">
+                            <Link href="/contact">
+                                Contact
+                            </Link>
+                        </Button>
                     </Toolbar>
                 </AppBar>
             </Box>
