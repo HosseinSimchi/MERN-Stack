@@ -1,19 +1,19 @@
 import {Container, Typography, Card,
-    CardContent ,CardActions ,Button, Paper } from '@mui/material';
+    CardContent ,CardActions ,Button, Box } from '@mui/material';
 import Image from 'next/image'
 
 
 const HomePage = () => {
     return (
         <> 
-            <Image src="/img/PersonalImg.png" alt="Image description" width="64" height="64" />
+            <img src="/img/bgImageHome.jpg" alt="Image description" className='imgHomePage' />
             <Container sx={{ width: '100%', maxWidth: 500, marginTop:5, textAlign:'center' }}>
-                <Typography color='#6272a4' variant="h3">
-                    Personal Website
+                <Typography className="centered" color='#f8f8f2' variant="h3">
+                    HOSSEIN SIMCHI PERSONAL WEBSITE
                 </Typography>
             </Container>
             <Container  sx={{textAlign:'center'}} >
-                <Card sx={{ maxWidth:230, backgroundColor:'#bd93f9', marginTop:3, textAlign:'center' }}>
+                <Card sx={{ maxWidth:230, backgroundColor:'#6272a4', marginTop:3, textAlign:'center' }}>
                     <CardContent>
                         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                             Word of the Day

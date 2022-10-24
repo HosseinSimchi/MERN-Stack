@@ -1,4 +1,4 @@
 /* 
 TODO:
-    1) BackGround Image for Home Page
+    1) Try to using the Paper ( MAUI )
 */

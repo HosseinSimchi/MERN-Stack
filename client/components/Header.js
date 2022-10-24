@@ -8,7 +8,7 @@ const Header = () => {
             <Box sx={{ flexGrow: 1 }}>
                 <AppBar position="static">
                     <Toolbar>
-                        <Avatar sx = {{width: 45, height: 45, marginRight:3}} alt = "Hossein Simchi" src="/img/LogoImage.jpg" />
+                        <Avatar sx = {{width: 45, height: 45, marginRight:3}} alt = "Hossein Simchi" src="/img/Logo.png" />
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                             Hossein Simchi
                         </Typography>
@@ -17,22 +17,22 @@ const Header = () => {
                                 Home
                             </Link>
                         </Button>
-                        <Button sx = {{marginRight:6}} color="inherit">
+                        <Button sx = {{marginRight:6}} color="secondary">
                             <Link href="/skills">
                                 Skills
                             </Link>
                         </Button>
-                        <Button sx = {{marginRight:6}} color="inherit">
+                        <Button sx = {{marginRight:6}} color="secondary">
                             <Link href="/articles">
                                 Articles
                             </Link>
                         </Button>
-                        <Button sx = {{marginRight:6}} color="inherit">
+                        <Button sx = {{marginRight:6}} color="secondary">
                             <Link href="/education">
                                 Education
                             </Link>
                         </Button>
-                        <Button sx = {{marginRight:6}} color="inherit">
+                        <Button sx = {{marginRight:6}} color="secondary">
                             <Link href="/contact">
                                 Contact
                             </Link>
